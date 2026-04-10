@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohamed Essam | Brutalist Portfolio</title>
+    <!-- Brutalist Typography: Heavy Sans and Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <link rel="stylesheet" href="bruta.css" />
+  </head>
+  <body>
+    <div id="custom-cursor"></div>
+
+    <div id="custom-alert">
+      <p id="alert-msg">
+        Mock CV file not found. Please replace the href in the code with your
+        actual resume path!
+      </p>
+      <button
+        class="brutalist-btn"
+        style="box-shadow: 4px 4px 0px var(--black); font-size: 0.8rem"
+        onclick="closeAlert()"
+      >
+        GOT IT
+      </button>
+    </div>
+
+    <!-- WHATSAPP CTA -->
+    <a href="https://wa.me/201116731195" target="_blank" class="whatsapp-float">
+      <svg viewBox="0 0 448 512">
+        <path
+          d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.7 17.8 69.7 27.2 106.2 27.2 122.4 0 222-99.6 222-222 0-59.3-23-115.1-65.1-157.1zM223.9 445.9c-33.1 0-65.6-8.9-93.9-25.7l-6.7-4-69.8 18.3 18.7-68.1-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.5-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-82.7 184.6-184.4 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-5.5-2.8-23.2-8.5-44.2-27.1-16.4-14.6-27.4-32.7-30.6-38.2-3.2-5.6-.3-8.6 2.4-11.3 2.6-2.6 5.5-6.5 8.3-9.7 2.8-3.3 3.7-5.6 5.5-9.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 13.2 5.8 23.5 9.2 31.5 11.8 13.3 4.2 25.4 3.6 35 2.2 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"
+        />
+      </svg>
+      WHATSAPP ME
+    </a>
+
+    <nav>
+      <span>M-E</span>
+      <ul id="animated-ul">
+        <li><a href="#header" class="brutalist-btn">Home</a></li>
+        <li><a href="#education-sec" class="brutalist-btn">Education</a></li>
+        <li><a href="#skills" class="brutalist-btn">Skills</a></li>
+        <li><a href="#projects-sec" class="brutalist-btn">Projects</a></li>
+        <li><a href="#contact-sec" class="brutalist-btn">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <header id="header">
+        <div class="bg-text-decoration">DEVELOPER</div>
+        <div class="hero-container">
+          <div class="first-p">
+            <span class="hello">HELLO WORLD</span>
+            <span class="name-intro">I'M MOHAMED ESSAM</span>
+            <span class="static-role">
+              <span class="highlight-green">FRONT-END</span><br />WEB DEVELOPER
+            </span>
+            <a href="#contact-sec" class="brutalist-btn hire-me-btn">HIRE ME</a>
+          </div>
+          <div class="img-wrapper">
+            <div class="img-frame-deco" id="frame-deco"></div>
+            <div class="edit-img">
+              <img src="./assets/IMG-20251206-WA0032.jpg" alt="Mohamed Essam" />
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="about-sec">
+        <h2>About me</h2>
+        <p>
+          Junior Frontend Developer specializing in building responsive and
+          user-friendly web applications using React, Tailwind CSS, and REST
+          APIs.<br /><br />
+          Worked on a production-level team project (Yumify) focused on UI
+          development and API integration.<br /><br />
+          Computer Science student at Alexandria University with strong
+          foundations in OOP, data structures, and SQL.
+        </p>
+      </section>
+
+      <section class="education-sec" id="education-sec">
+        <h2>Education</h2>
+        <div class="container">
+          <p>
+            Bachelor of Science in Computer and Data Science <br />
+            Alexandria University, Alexandria, Egypt <br />
+            Expected Graduation: June 2028 <br /><br />
+            - Current GPA: 3.18 <br />
+            - Object-Oriented Programming, Data Structures, Databases (SQL),
+            Algorithms, Web Development
+          </p>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+          <div class="skill">HTML</div>
+          <div class="skill">CSS</div>
+          <div class="skill">JavaScript</div>
+          <div class="skill">React</div>
+          <div class="skill">Tailwind</div>
+          <div class="skill">SQL</div>
+          <div class="skill">Git</div>
+          <div class="skill">OOP</div>
+          <div class="skill">Data Structures</div>
+        </div>
+      </section>
+
+      <section class="projects-sec" id="projects-sec">
+        <h2 class="projects-title">PROJECTS</h2>
+        <div class="cards-container">
+          <div class="card">
+            <img src="./assets/coffee.png" alt="Project 1" />
+            <div class="discription">
+              <b>COFFEE BRAND:</b> A responsive marketing website built using
+              HTML, CSS, and JavaScript. Engaged layout optimized for all
+              screens.
+            </div>
+            <a
+              target="_blank"
+              href="https://mohamedessam11111.github.io/Coffee-website/"
+              class="card-link"
+              >SHOW PROJECT</a
+            >
+          </div>
+          <div class="card">
+            <img src="./assets/yumify.png" alt="Project 2" />
+            <div class="discription">
+              <b>YUMIFY:</b> Restaurant order tracking management web app built
+              with React. Integrated REST APIs for dynamic data.
+            </div>
+            <a
+              target="_blank"
+              href="http://yumify-plus.vercel.app/"
+              class="card-link"
+              >SHOW PROJECT</a
+            >
+          </div>
+          <div class="card">
+            <img src="./assets/portfolio.png" alt="Project 3" />
+            <div class="discription">
+              <b>PORTFOLIO:</b> Professional portfolio site highlighting
+              frontend work, navigation, and polished UI interactions.
+            </div>
+            <a
+              href="https://mohamedessam11111.github.io/simple-portfolio/"
+              target="_blank"
+              class="card-link"
+              >SHOW PROJECT</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-sec" id="contact-sec">
+        <div class="big-container">
+          <div class="contact-info">
+            <h2>CONTACT</h2>
+            <div class="email">
+              EMAIL:
+              <a href="mailto:mohamedessam9523@gmail.com" class="red-underline"
+                >mohamedessam9523@gmail.com</a
+              >
+            </div>
+            <div class="phone-num">
+              TEL:
+              <a href="tel:+201116731195" class="blue-underline">01116731195</a>
+            </div>
+
+            <div class="contain-buttons">
+              <a
+                target="_blank"
+                href="https://github.com/MohamedEssam11111"
+                class="social-btn"
+              >
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                  alt="Github"
+                />
+                Github
+              </a>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/mohamed-essam-759b98357/"
+                class="social-btn"
+              >
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+                  alt="LinkedIn"
+                />
+                LinkedIn
+              </a>
+              <a
+                target="_blank"
+                href="https://www.facebook.com/koky.essam.9/"
+                class="social-btn"
+              >
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
+                  alt="Facebook"
+                />
+                Facebook
+              </a>
+              <a
+                target="_blank"
+                href="https://www.instagram.com/mohamed.e.ssam/"
+                class="social-btn"
+              >
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
+                  alt="Instagram"
+                />
+                Instagram
+              </a>
+            </div>
+
+            <!-- DOWNLOAD CV BUTTON -->
+            <a
+              href="./assets/Mohamed_Essam_Frontend_Developer_CV.pdf"
+              download="Mohamed-Essam-Resume.pdf"
+              class="brutalist-btn cv-btn"
+              id="download-cv-btn"
+              >DOWNLOAD CV</a
+            >
+          </div>
+          <div class="form-container">
+            <form onsubmit="event.preventDefault()">
+              <input
+                type="text"
+                placeholder="NAME"
+                id="contact-name"
+                required
+              />
+              <input
+                type="email"
+                placeholder="EMAIL"
+                id="contact-email"
+                required
+              />
+              <textarea
+                placeholder="MESSAGE"
+                id="contact-message"
+                rows="5"
+                required
+              ></textarea>
+              <button type="submit" class="brutalist-btn submit-btn">
+                SEND MESSAGE
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="bruta.js"></script>
+</html>
