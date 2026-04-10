@@ -172,6 +172,8 @@ nav span:hover {
 
 nav ul {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   list-style: none;
   gap: 10px;
 }
